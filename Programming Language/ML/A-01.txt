@@ -1,0 +1,24 @@
+fun cube x = x * x * x;
+fun cuber (x: real) = x * x * x;
+fun fourth (x: 'a list) = hd(tl(tl(tl x)));
+fun min3 (a, b, c) = 
+    if a < b andalso a < c then a
+    else if b < a andalso b < c then b
+    else c;
+fun red3(a,b,c) = (a,c);
+fun thirds x = hd(tl(tl(explode x)));
+fun cycle x = tl x @ [hd x];
+fun sort3 (a:real, b:real, c:real) = 
+    if a < b andalso a <c then 
+        if b < c then [a,b,c]
+        else [a,c,b]
+    else if b < a andalso b < c then 
+        if a < c then [b,a,c]
+        else [b,c,a]
+    else 
+        if a < b then [c,a,b]
+        else [c,b,a];
+fun del3 x = hd x :: hd (tl x) :: tl(tl(tl x));
+fun sqsm x = 
+    if x = 0 then 0 
+    else (x*x) + sqsm(x-1);
