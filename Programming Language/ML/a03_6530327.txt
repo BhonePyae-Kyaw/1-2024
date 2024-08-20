@@ -1,0 +1,13 @@
+fun il2rl nil = nil
+| il2rl L = map real L;
+
+fun ordlist nil = nil
+| ordlist L = map ord L;
+
+fun squarelist nil = nil
+| squarelist L = map (fn x => x*x) L;
+
+fun multpairs nil = nil
+| multpairs L = map (fn (a,b) => a * b) L;
+
+fun inclist L inc = map (fn a => a + inc) L;

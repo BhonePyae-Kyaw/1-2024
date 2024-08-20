@@ -1,0 +1,28 @@
+fun member(e, nil) = false
+| member(e, x::xs) =
+  if e = x then true else member(e, xs);
+
+
+fun less (e, nil) = nil  
+| less (e, x::L) =
+if (e > x) then x :: less(e, L) else less(e,L);
+
+fun repeats(nil) = false
+| repeats([_]) = false
+| repeats(a::b::L) =
+if a = b then true else repeats(b::L);
+
+chapter 9
+fun il2rl nil = nil
+| il2rl L = map real L;
+
+fun ordlist nil = nil
+| ordlist L = map ord L;
+
+fun squarelist nil = nil
+| squarelist L = map (fn x => x*x) L;
+
+fun multpairs nil = nil
+| multpairs L = map (fn (a,b) => a *b) L;
+
+fun inclist L inc = map (fn a => a + inc) L;
