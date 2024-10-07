@@ -1,0 +1,37 @@
+moves
+forward (path) -> forward(fork) -> left (maze 0) -> left (maze 1) -> right (maze 2) -> left (cave) -> left (lake) (treasurs)
+?- go.
+This is an adventure game.
+Legal moves are left, right, or forward.
+End each move with a period.
+
+You are in a pleasant valley, with a trail ahead.
+
+Next move -- left.
+That is not a legal move.
+You are in a pleasant valley, with a trail ahead.
+
+Next move -- |: forward.
+You are on a path, with ravines on both sides.
+
+Next move -- |: forward.
+You are at a fork in the path.
+
+Next move -- |: left.
+You are in a maze of twisty trails, all alike.
+
+Next move -- |: left.
+You are in a maze of twisty trails, all alike.
+
+Next move -- |: right.
+You are in a maze of twisty trails, all alike.
+
+Next move -- |: left.
+You're in a dark cave. You can't see anything.
+
+Next move -- |: left.
+You are at the edge of a lake with a treasure chest.
+There is a treasure chest here.
+Congratulations, you win!
+Thanks for playing.
+true.

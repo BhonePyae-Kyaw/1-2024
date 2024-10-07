@@ -1,0 +1,27 @@
+?- go.
+This is an adventure game.
+Legal moves are left, right, or forward.
+End each move with a period.
+
+You are in a pleasant valley, with a trail ahead.
+
+Next move -- forward.
+You are on a path, with ravines on both sides.
+
+Next move -- |: forward.
+You are at a fork in the path.
+
+Next move -- |: left.
+You are in a maze of twisty trails, all alike.
+
+Next move -- |: right.
+You are in a maze of twisty trails, all alike.
+An ogre sucks your brain out through
+your eyesockets, and you die.
+Thanks for playing.
+true.
+
+
+
+
+moves -> forward (path) -> forward(fork) -> left(maze 0) -> right(maze 3) (ogres here)
